@@ -3,68 +3,125 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mamadou Bah | Portfolio</title>
+  <title>Mamadou Bah | Portfolio Cybersécurité</title>
+
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; margin:0; background:#0b1220; color:#e7eefc;}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      margin:0; background:#0b1220; color:#e7eefc;
+    }
     .wrap{max-width:980px; margin:0 auto; padding:40px 18px;}
-    header{display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between; margin-bottom:26px;}
-    .card{background:#121a2e; border:1px solid #223055; border-radius:16px; padding:18px;}
+    header{
+      display:flex; flex-wrap:wrap; gap:14px; align-items:center;
+      justify-content:space-between; margin-bottom:26px;
+    }
+    .card{
+      background:#121a2e; border:1px solid #223055;
+      border-radius:16px; padding:18px;
+    }
     h1{margin:0; font-size:28px;}
+    h2{margin:0 0 10px 0;}
     .muted{color:#a9b8df}
     .btns{display:flex; gap:10px; flex-wrap:wrap;}
-    a.btn{display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #2b3b66; color:#e7eefc; text-decoration:none; background:#0f1730;}
+    a.btn{
+      display:inline-block; padding:10px 14px; border-radius:12px;
+      border:1px solid #2b3b66; color:#e7eefc; text-decoration:none;
+      background:#0f1730;
+    }
     a.btn:hover{border-color:#5a77ff}
-    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px;}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:14px;
+    }
     .proj h3{margin:0 0 8px 0; font-size:18px;}
     .proj p{margin:0 0 12px 0; color:#b6c3e6; line-height:1.45}
     .tags{display:flex; gap:8px; flex-wrap:wrap;}
-    .tag{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid #2b3b66; color:#bcd0ff;}
+    .tag{
+      font-size:12px; padding:4px 8px; border-radius:999px;
+      border:1px solid #2b3b66; color:#bcd0ff;
+    }
+    ul{margin:10px 0 0 18px; padding:0;}
+    li{margin:6px 0;}
     footer{margin-top:26px; color:#9fb1df; font-size:14px;}
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
+    <!-- HEADER -->
     <header>
       <div>
         <h1>Mamadou Bah</h1>
-        <div class="muted">Étudiant en informatique • Développeur junior • Java • Python • Azure • SQL</div>
+        <div class="muted">
+          Diplômé en télécommunications • Étudiant en informatique<br>
+          <strong>Spécialisation en cybersécurité</strong><br>
+          Sécurité des réseaux • Sécurité applicative • Python • Java • Azure
+        </div>
         <div class="muted">Chicoutimi, QC • Canada</div>
       </div>
+
       <div class="btns">
-        <a class="btn" href="https://github.com/bahmb26" target="_blank">GitHub</a>
-        <!-- Remplace par ton LinkedIn -->
-        <a class="btn" href="#" target="_blank">LinkedIn</a>
-        <!-- Tu peux mettre ton CV PDF dans le repo et lier ici -->
-        <a class="btn" href="cv.pdf" target="_blank">CV</a>
+        <a class="btn" href="https://github.com/bahmb26" target="_blank" rel="noopener">GitHub</a>
+        <!-- Remplace # par ton vrai lien LinkedIn -->
+        <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Ajoute ton cv.pdf dans le repo -->
+        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">CV</a>
       </div>
     </header>
 
+    <!-- A PROPOS -->
     <section class="card">
-      <h2 style="margin:0 0 10px 0;">À propos</h2>
+      <h2>À propos</h2>
       <p class="muted" style="margin:0; line-height:1.55">
-        Je construis des projets concrets en développement logiciel, cloud et cybersécurité.
-        Je cherche une opportunité de stage ou un poste junior.
+        Je suis diplômé en <strong>télécommunications</strong> et actuellement étudiant en informatique.
+        Mon parcours m’a permis de développer de solides bases en <strong>réseaux</strong> et
+        <strong>communications</strong>, que j’ai naturellement orientées vers la
+        <strong>cybersécurité</strong>.  
+        Je recherche une opportunité de <strong>stage</strong> ou un poste <strong>junior</strong>
+        en cybersécurité ou en sécurité des réseaux.
       </p>
     </section>
 
+    <!-- FORMATION -->
+    <section class="card" style="margin-top:14px;">
+      <h2>🎓 Formation</h2>
+      <p class="muted" style="margin:0; line-height:1.55">
+        <strong>Diplôme en télécommunications</strong><br>
+        Réseaux, transmissions, protocoles de communication, infrastructures télécoms.<br><br>
+        <strong>Études en informatique</strong><br>
+        Développement logiciel, bases de données, cloud computing et cybersécurité.
+      </p>
+    </section>
+
+    <!-- CYBERSECURITE -->
+    <section class="card" style="margin-top:14px;">
+      <h2>🛡️ Spécialisation : Cybersécurité</h2>
+      <p class="muted" style="margin:0; line-height:1.55">
+        Issu d’une formation en <strong>télécommunications</strong>, je me suis spécialisé en
+        <strong>cybersécurité</strong> avec un intérêt particulier pour la sécurité des réseaux,
+        la sécurité des applications et l’analyse de vulnérabilités.
+      </p>
+
+      <ul class="muted">
+        <li>🔐 Sécurité des mots de passe et bases du chiffrement</li>
+        <li>🕵️ Analyse de logs et détection d’anomalies</li>
+        <li>🌐 Sécurité réseau et protocoles TCP/IP</li>
+        <li>🧩 Stéganographie et dissimulation d’informations</li>
+        <li>🧪 Bonnes pratiques OWASP (bases)</li>
+      </ul>
+    </section>
+
+    <!-- PROJETS -->
     <h2 style="margin:18px 0 10px 0;">Projets</h2>
+
     <div class="grid">
       <div class="card proj">
-        <h3>Azure Functions — Image Upload & Thumbnails</h3>
-        <p>Site statique + Azure Functions : téléversement d’images, listing des miniatures et redimensionnement automatique.</p>
-        <div class="tags">
-          <span class="tag">Azure</span><span class="tag">Python</span><span class="tag">Serverless</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
-        </div>
-      </div>
-
-      <div class="card proj">
         <h3>Firewall Analyzer</h3>
-        <p>Outil d’analyse de logs de pare-feu avec visualisation et statistiques.</p>
+        <p>Analyse de logs de pare-feu pour détecter des anomalies et produire des statistiques de sécurité.</p>
         <div class="tags">
-          <span class="tag">Python</span><span class="tag">Security</span><span class="tag">Logs</span>
+          <span class="tag">Python</span><span class="tag">Cybersécurité</span><span class="tag">Logs</span>
         </div>
         <div style="margin-top:12px;">
           <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
@@ -73,9 +130,20 @@
 
       <div class="card proj">
         <h3>Password Manager (CLI)</h3>
-        <p>Gestionnaire de mots de passe en ligne de commande : stockage, recherche, bonnes pratiques de sécurité.</p>
+        <p>Gestionnaire de mots de passe en ligne de commande avec bonnes pratiques de sécurité.</p>
         <div class="tags">
-          <span class="tag">CLI</span><span class="tag">Security</span><span class="tag">Python</span>
+          <span class="tag">Python</span><span class="tag">Security</span><span class="tag">CLI</span>
+        </div>
+        <div style="margin-top:12px;">
+          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
+        </div>
+      </div>
+
+      <div class="card proj">
+        <h3>Steganography CLI Tool</h3>
+        <p>Outil CLI permettant de cacher et d’extraire des messages dans des images.</p>
+        <div class="tags">
+          <span class="tag">Security</span><span class="tag">Python</span><span class="tag">CLI</span>
         </div>
         <div style="margin-top:12px;">
           <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
@@ -84,9 +152,9 @@
 
       <div class="card proj">
         <h3>Java TCP File Transfer</h3>
-        <p>Client/serveur en Java pour transfert de fichiers via sockets TCP + gestion d’échanges.</p>
+        <p>Application client/serveur Java pour le transfert de fichiers via sockets TCP.</p>
         <div class="tags">
-          <span class="tag">Java</span><span class="tag">Networking</span><span class="tag">TCP</span>
+          <span class="tag">Java</span><span class="tag">Réseaux</span><span class="tag">TCP</span>
         </div>
         <div style="margin-top:12px;">
           <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
@@ -94,9 +162,11 @@
       </div>
     </div>
 
+    <!-- FOOTER -->
     <footer>
       © <span id="y"></span> Mamadou Bah • Portfolio hébergé sur GitHub Pages
     </footer>
+
   </div>
 
   <script>
@@ -104,4 +174,3 @@
   </script>
 </body>
 </html>
-
