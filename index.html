@@ -4,173 +4,262 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mamadou Bah | Portfolio Cybersécurité</title>
-
-  <style>
-    body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      margin:0; background:#0b1220; color:#e7eefc;
-    }
-    .wrap{max-width:980px; margin:0 auto; padding:40px 18px;}
-    header{
-      display:flex; flex-wrap:wrap; gap:14px; align-items:center;
-      justify-content:space-between; margin-bottom:26px;
-    }
-    .card{
-      background:#121a2e; border:1px solid #223055;
-      border-radius:16px; padding:18px;
-    }
-    h1{margin:0; font-size:28px;}
-    h2{margin:0 0 10px 0;}
-    .muted{color:#a9b8df}
-    .btns{display:flex; gap:10px; flex-wrap:wrap;}
-    a.btn{
-      display:inline-block; padding:10px 14px; border-radius:12px;
-      border:1px solid #2b3b66; color:#e7eefc; text-decoration:none;
-      background:#0f1730;
-    }
-    a.btn:hover{border-color:#5a77ff}
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:14px;
-    }
-    .proj h3{margin:0 0 8px 0; font-size:18px;}
-    .proj p{margin:0 0 12px 0; color:#b6c3e6; line-height:1.45}
-    .tags{display:flex; gap:8px; flex-wrap:wrap;}
-    .tag{
-      font-size:12px; padding:4px 8px; border-radius:999px;
-      border:1px solid #2b3b66; color:#bcd0ff;
-    }
-    ul{margin:10px 0 0 18px; padding:0;}
-    li{margin:6px 0;}
-    footer{margin-top:26px; color:#9fb1df; font-size:14px;}
-  </style>
+  <meta name="description" content="Portfolio de Mamadou Bah — Cybersécurité & Réseaux. Étudiant à l'UQAC." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <div class="wrap">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">MB</a>
 
-    <!-- HEADER -->
-    <header>
-      <div>
-        <h1>Mamadou Bah</h1>
-        <div class="muted">
-          Diplômé en télécommunications • Étudiant en informatique<br>
-          <strong>Spécialisation en cybersécurité</strong><br>
-          Sécurité des réseaux • Sécurité applicative • Python • Java • Azure
+      <nav class="nav">
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="badge">Cybersécurité • Réseaux</p>
+          <h1>Mamadou Bah</h1>
+          <p class="subtitle">
+            Étudiant en <strong>baccalauréat en informatique – cybersécurité</strong> à l’UQAC,
+            diplômé en télécommunications. Intérêt : sécurité réseau, administration système,
+            bonnes pratiques de sécurité.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="assets/cv-mamadou-bah.pdf" target="_blank" rel="noopener">
+              Télécharger mon CV (PDF)
+            </a>
+            <a class="btn ghost" href="https://github.com/bahmb26" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </div>
+
+          <div class="quick">
+            <div class="quick-item">
+              <span class="label">Localisation</span>
+              <span class="value">Chicoutimi, QC</span>
+            </div>
+            <div class="quick-item">
+              <span class="label">Statut</span>
+              <span class="value">Stage / Junior</span>
+            </div>
+            <div class="quick-item">
+              <span class="label">Email</span>
+              <span class="value"><a href="mailto:bahmsh3@gmail.com">bahmsh3@gmail.com</a></span>
+            </div>
+          </div>
         </div>
-        <div class="muted">Chicoutimi, QC • Canada</div>
-      </div>
 
-      <div class="btns">
-        <a class="btn" href="https://github.com/bahmb26" target="_blank" rel="noopener">GitHub</a>
-        <!-- Remplace # par ton vrai lien LinkedIn -->
-        <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
-        <!-- Ajoute ton cv.pdf dans le repo -->
-        <a class="btn" href="cv.pdf" target="_blank" rel="noopener">CV</a>
+        <div class="hero-right">
+          <div class="card profile-card">
+            <img class="avatar" src="assets/photo.jpeg" alt="Photo Mamadou Bah" />
+            <div class="profile-meta">
+              <p class="profile-name">Mamadou Bah</p>
+              <p class="profile-role">Cybersécurité • Réseaux</p>
+              <div class="links">
+                <a href="https://github.com/bahmb26" target="_blank" rel="noopener">GitHub</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card info-card">
+            <h3>Infos</h3>
+            <ul>
+              <li><strong>Tel :</strong> 581 235 5331</li>
+              <li><strong>Adresse :</strong> 15 Arthur-Hamel, Chicoutimi, QC (G7H 3M5)</li>
+              <li><strong>LinkedIn :</strong> Compte LinkedIn (bahmsh3@gmail.com)</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
     <!-- A PROPOS -->
-    <section class="card">
-      <h2>À propos</h2>
-      <p class="muted" style="margin:0; line-height:1.55">
-        Je suis diplômé en <strong>télécommunications</strong> et actuellement étudiant en informatique.
-        Mon parcours m’a permis de développer de solides bases en <strong>réseaux</strong> et
-        <strong>communications</strong>, que j’ai naturellement orientées vers la
-        <strong>cybersécurité</strong>.  
-        Je recherche une opportunité de <strong>stage</strong> ou un poste <strong>junior</strong>
-        en cybersécurité ou en sécurité des réseaux.
-      </p>
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2>À propos</h2>
+        <p class="lead">
+          Je construis un profil orienté <strong>cybersécurité</strong> et <strong>réseaux</strong>,
+          avec une base en télécommunications. Je m’intéresse à la sécurité des infrastructures,
+          à l’hygiène numérique et aux bonnes pratiques (accès, mots de passe, segmentation, durcissement).
+        </p>
+      </div>
     </section>
 
-    <!-- FORMATION -->
-    <section class="card" style="margin-top:14px;">
-      <h2>🎓 Formation</h2>
-      <p class="muted" style="margin:0; line-height:1.55">
-        <strong>Diplôme en télécommunications</strong><br>
-        Réseaux, transmissions, protocoles de communication, infrastructures télécoms.<br><br>
-        <strong>Études en informatique</strong><br>
-        Développement logiciel, bases de données, cloud computing et cybersécurité.
-      </p>
-    </section>
+    <!-- COMPETENCES -->
+    <section id="competences" class="section alt">
+      <div class="container">
+        <h2>Compétences</h2>
 
-    <!-- CYBERSECURITE -->
-    <section class="card" style="margin-top:14px;">
-      <h2>🛡️ Spécialisation : Cybersécurité</h2>
-      <p class="muted" style="margin:0; line-height:1.55">
-        Issu d’une formation en <strong>télécommunications</strong>, je me suis spécialisé en
-        <strong>cybersécurité</strong> avec un intérêt particulier pour la sécurité des réseaux,
-        la sécurité des applications et l’analyse de vulnérabilités.
-      </p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Cybersécurité</h3>
+            <ul class="chips">
+              <li>Sécurité réseau (bases)</li>
+              <li>Gestion des mots de passe</li>
+              <li>Bonnes pratiques</li>
+              <li>Stéganographie</li>
+            </ul>
+          </div>
 
-      <ul class="muted">
-        <li>🔐 Sécurité des mots de passe et bases du chiffrement</li>
-        <li>🕵️ Analyse de logs et détection d’anomalies</li>
-        <li>🌐 Sécurité réseau et protocoles TCP/IP</li>
-        <li>🧩 Stéganographie et dissimulation d’informations</li>
-        <li>🧪 Bonnes pratiques OWASP (bases)</li>
-      </ul>
+          <div class="card">
+            <h3>Réseaux</h3>
+            <ul class="chips">
+              <li>TCP/IP</li>
+              <li>LAN/WAN (bases)</li>
+              <li>Topologies</li>
+              <li>Tests de connectivité</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Outils</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>Java</li>
+              <li>Git / GitHub</li>
+              <li>Packet Tracer</li>
+              <li>GNS3</li>
+              <li>Windows / Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJETS -->
-    <h2 style="margin:18px 0 10px 0;">Projets</h2>
+    <section id="projets" class="section">
+      <div class="container">
+        <h2>Projets</h2>
+        <p class="muted">
+          (Tu peux remplacer/ajouter les liens quand tu publies tes repos.)
+        </p>
 
-    <div class="grid">
-      <div class="card proj">
-        <h3>Firewall Analyzer</h3>
-        <p>Analyse de logs de pare-feu pour détecter des anomalies et produire des statistiques de sécurité.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">Cybersécurité</span><span class="tag">Logs</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
+        <div class="grid-2">
+          <article class="card project">
+            <div class="project-top">
+              <h3>Simulations réseau (Packet Tracer / GNS3)</h3>
+              <span class="tag">Réseaux</span>
+            </div>
+            <p>
+              Conception de topologies LAN/WAN, configuration de base des équipements,
+              tests de connectivité et validation.
+            </p>
+            <div class="project-links">
+              <a class="btn small" href="https://github.com/bahmb26" target="_blank" rel="noopener">Voir sur GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Portfolio & CV en ligne (GitHub Pages)</h3>
+              <span class="tag">Web</span>
+            </div>
+            <p>
+              Site personnel déployé sur GitHub Pages, avec CV PDF téléchargeable
+              et sections compétences/formation.
+            </p>
+            <div class="project-links">
+              <a class="btn small" href="assets/cv-mamadou-bah.pdf" target="_blank" rel="noopener">CV PDF</a>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="card proj">
-        <h3>Password Manager (CLI)</h3>
-        <p>Gestionnaire de mots de passe en ligne de commande avec bonnes pratiques de sécurité.</p>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">Security</span><span class="tag">CLI</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
+    <!-- FORMATION -->
+    <section id="formation" class="section alt">
+      <div class="container">
+        <h2>Formation</h2>
+
+        <div class="timeline">
+          <div class="t-item card">
+            <div class="t-date">En cours</div>
+            <div class="t-body">
+              <h3>UQAC — Baccalauréat en informatique (Cybersécurité)</h3>
+              <p class="muted">Cours : réseaux, systèmes, sécurité, programmation.</p>
+            </div>
+          </div>
+
+          <div class="t-item card">
+            <div class="t-date">2015 – 2018</div>
+            <div class="t-body">
+              <h3>Université Nongo Conakry — Licence en Télécommunications</h3>
+              <p class="muted">Réseaux mobiles : GSM, GPRS, UMTS, LTE (bases).</p>
+            </div>
+          </div>
+
+          <div class="t-item card">
+            <div class="t-date">2012 – 2014</div>
+            <div class="t-body">
+              <h3>Lycée Wouro de Labé — Baccalauréat Unique (BAC)</h3>
+            </div>
+          </div>
+
+          <div class="t-item card">
+            <div class="t-date">2007 – 2011</div>
+            <div class="t-body">
+              <h3>Collège Conkola Labé — BEPC</h3>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="card proj">
-        <h3>Steganography CLI Tool</h3>
-        <p>Outil CLI permettant de cacher et d’extraire des messages dans des images.</p>
-        <div class="tags">
-          <span class="tag">Security</span><span class="tag">Python</span><span class="tag">CLI</span>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Me joindre</h3>
+            <ul class="contact-list">
+              <li><strong>Email :</strong> <a href="mailto:bahmsh3@gmail.com">bahmsh3@gmail.com</a></li>
+              <li><strong>Tél :</strong> 581 235 5331</li>
+              <li><strong>GitHub :</strong> <a href="https://github.com/bahmb26" target="_blank" rel="noopener">github.com/bahmb26</a></li>
+              <li><strong>LinkedIn :</strong> Compte LinkedIn (bahmsh3@gmail.com)</li>
+              <li><strong>Adresse :</strong> 15 Arthur-Hamel, Chicoutimi, QC</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Disponibilité</h3>
+            <p class="lead">
+              Disponible pour un <strong>stage</strong> ou un poste <strong>junior</strong>.
+              Je peux fournir des références et un CV PDF.
+            </p>
+            <a class="btn primary" href="assets/cv-mamadou-bah.pdf" target="_blank" rel="noopener">
+              Ouvrir le CV PDF
+            </a>
+          </div>
         </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
-        </div>
+
       </div>
+    </section>
 
-      <div class="card proj">
-        <h3>Java TCP File Transfer</h3>
-        <p>Application client/serveur Java pour le transfert de fichiers via sockets TCP.</p>
-        <div class="tags">
-          <span class="tag">Java</span><span class="tag">Réseaux</span><span class="tag">TCP</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="https://github.com/bahmb26" target="_blank">Voir repo</a>
-        </div>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Mamadou Bah — Portfolio</p>
+        <a href="#top">Haut de page ↑</a>
       </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      © <span id="y"></span> Mamadou Bah • Portfolio hébergé sur GitHub Pages
     </footer>
-
-  </div>
+  </main>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
